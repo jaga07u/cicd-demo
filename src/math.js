@@ -9,7 +9,9 @@ function subtract(a, b) {
 function multiply(a, b) {
     return a * b;
 }
-
+function divide(a,b){
+    return a/b;
+}
 function calculateDiscount(price, percentage) {
     if (price < 0 || percentage < 0 || percentage > 100) {
         throw new Error("Invalid price or discount");
@@ -22,5 +24,6 @@ module.exports = {
     add,
     subtract,
     calculateDiscount,
-    multiply
+    multiply,
+    divide
 };
